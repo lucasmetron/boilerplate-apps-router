@@ -33,5 +33,16 @@
     "prettier": "3.3.2",
     "typescript": "^5",
     "typescript-eslint": "^7.16.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint --fix",
+      "jest --bail --findRelatedTests --passWithNoTests --detectOpenHandles"
+    ]
   }
 }
