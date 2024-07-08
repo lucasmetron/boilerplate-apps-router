@@ -1,8 +1,4 @@
-/* eslint-disable no-undef */
+// eslint-disable-next-line no-undef
 module.exports = {
-  '*.js': ['prettier --write', 'git add'],
-  '*.jsx': ['prettier --write', 'git add'],
-  '*.ts': ['prettier --write', 'git add'],
-  '*.tsx': ['prettier --write', 'git add'],
-  '.lintstagedrc.js': ['prettier --write', 'git add']
+  '*.{js,jsx,ts,tsx}': ['eslint --fix', 'prettier --write', 'git add']
 }
