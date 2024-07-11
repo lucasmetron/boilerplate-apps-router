@@ -6,10 +6,8 @@ describe('Main', () => {
   it('should render the heading', () => {
     render(<Main />)
 
-    // expect(
-    //   screen.getByRole('heading', { name: /react avançado/i })
-    // ).toBeInTheDocument(),
-
-    expect(screen.getByText('React avançado'))
+    expect(
+      screen.getByRole('heading', { name: /react avançado/i })
+    ).toBeInTheDocument()
   })
 })
