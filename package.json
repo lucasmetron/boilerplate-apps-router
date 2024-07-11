@@ -54,7 +54,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "yarn lint --fix",
-      "jest --bail --findRelatedTests --passWithNoTests --detectOpenHandles"
+      "jest --bail --findRelatedTests --passWithNoTests"
     ]
   }
 }
