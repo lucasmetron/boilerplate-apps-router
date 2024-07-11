@@ -53,9 +53,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write",
-      "jest --bail --passWithNoTests --detectOpenHandles"
+      "yarn lint --fix",
+      "jest --bail --findRelatedTests --passWithNoTests --detectOpenHandles --maxWorkers=50%"
     ]
   }
 }
