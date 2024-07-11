@@ -1,13 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
-import Main from '@/components/Main'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Main />
-
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
