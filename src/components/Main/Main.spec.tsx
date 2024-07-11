@@ -10,6 +10,6 @@ describe('Main', () => {
     //   screen.getByRole('heading', { name: /react avançado/i })
     // ).toBeInTheDocument(),
 
-    expect(screen.getByText('React avançaaado'))
+    expect(screen.getByText('React avançado'))
   })
 })
